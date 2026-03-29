@@ -173,3 +173,70 @@
 
 // console.log("Text:", str)
 // console.log("There are", count, "occurrence(s) of word 'the'",)
+
+// CHAPTER 26 to 30
+
+// Question # 1
+// var num = Number(prompt("Enter a number", 3.45215))
+
+// console.log("Number:", num)
+// console.log("Round off value:", Math.round(num))
+// console.log("Floor value:", Math.floor(num))
+// console.log("Ceil vlue:", Math.ceil(num))
+
+// Question # 2
+// var num = Number(prompt("Enter a negtive number", -2.637))
+
+// if (num > 0) {
+//     console.log("The number should be negtive")
+// } else {
+//     console.log("Number:", num)
+//     console.log("Round off value:", Math.round(num))
+//     console.log("Floor value:", Math.floor(num))
+//     console.log("Ceil vlue:", Math.ceil(num))
+// }
+
+// Question # 3
+// var num = Number(prompt("Enter a number"))
+// var absoluteValue = num
+
+// if (num < 0) {
+//     absoluteValue = num * -1
+// }
+
+// console.log("The absolute value of", num, "is", absoluteValue)
+
+// Question # 4
+// var valueOfDice = Math.round((Math.random() * 6))
+// console.log("Random dice value:", valueOfDice)
+
+// Question # 5
+// var coinValue;
+// var randomNum = Math.round(Math.random() * 1 + 1)
+
+// if (randomNum == 2) {
+//     coinValue = "Heads"
+// } else {
+//     coinValue = "Tails"
+// }
+
+// console.log("Random coin value:", coinValue)
+
+// Question # 6
+// var randomNum = Math.round(Math.random() * 99 + 1)
+// console.log("Random number between 1 and 100:", randomNum)
+
+// Question # 7
+// var userInput = prompt("Enter your wieght in kilograms")
+// userInput = parseFloat(userInput)
+// console.log("The weight of user is", userInput, "Kilograms")
+
+// Question # 8
+// var randomSecreatNum = Math.round(Math.random() * 9 + 1)
+// var userInput = Number(prompt("Enter a number between 1 to 10"))
+
+// if (randomSecreatNum == userInput) {
+//     console.log("Congratulations! You guessed the correct number")
+// } else {
+//     console.log("Sorry! That is not correct. Try again")
+// }
