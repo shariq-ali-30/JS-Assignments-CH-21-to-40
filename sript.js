@@ -240,3 +240,115 @@
 // } else {
 //     console.log("Sorry! That is not correct. Try again")
 // }
+
+// CHAPTER 31 to 34
+
+// Question # 1
+// var currentTime = new Date()
+// console.log(currentTime)
+
+// Question # 2
+// var currentTime = new Date()
+// var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+// var currentMonth = currentTime.getMonth()
+// for (let i = 0; i < months.length; i++) {
+//     if (i == currentMonth) {
+//         console.log("Current month:", months[i])
+//     }    
+// }
+
+// Question # 3
+// var currentTime = new Date()
+// var days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+// var currentDay = currentTime.getDay()
+// for (let i = 0; i < days.length; i++) {
+//     if (i == currentDay) {
+//         console.log("Today is", days[i])
+//     }    
+// }
+
+// Question # 4
+// var currentTime = new Date()
+// var currentDay = currentTime.getDay()
+
+// if (currentDay == 0 || currentDay == 6) {
+//     console.log("it's Fun day")    
+// }
+
+// Question # 5
+// var currentTime = new Date()
+// var currentDate = currentTime.getDate()
+// if (currentDate < 15) {
+//     console.log("First fifteen days of the month")
+// } else {
+//     console.log("Last fifteen days of the month")
+// }
+
+// Question # 6
+// var currentTime = new Date()
+// var millisecondsSince1970 = currentTime.getTime()
+// var minutesSince1970 = millisecondsSince1970 / 1000 / 60
+// console.log("Current date:", currentTime)
+// console.log("Elapsed milliseconds since January 1, 1970:", millisecondsSince1970)
+// console.log("Elapsed minutes since January 1, 1970:", minutesSince1970)
+
+// Question # 7
+// var currentTime = new Date()
+// var hour = currentTime.getHours()
+// if (hour >= 12) {
+//     console.log("Its PM")
+// } else {
+//     console.log("Its AM")
+// }
+
+// Question # 8
+// var laterDate = new Date("31 Dec 2020")
+// console.log("Later date:", laterDate)
+
+// Question # 9
+// var firstRamadan = new Date("19 Feb 2026").getTime()
+// var currentDay = new Date().getTime()
+// var daysPassed = Math.round((currentDay - firstRamadan) / 1000 / 60 / 60 / 24)
+// console.log(daysPassed)
+
+// Question # 10
+// var referenceDate = new Date("1 Jan 2015").getTime()
+// var currentDay = new Date().getTime()
+// var secondsPassed = Math.round((currentDay - referenceDate) / 1000)
+// console.log("On reference date 1 Jan 2015,", secondsPassed, "seconds had passed since the beginning of 2015")
+
+// Question # 11
+// var currentTime = new Date()
+// var currentHour = currentTime.getHours()
+// var hourAgo = new Date().setHours(currentHour - 1)
+// console.log("Curret date:", currentTime, "1 hour ago it was", new Date(hourAgo))
+
+// Question # 12
+// var currentTime = new Date()
+// var currentYear = currentTime.getFullYear()
+// var hundredYearsAgo = new Date().setFullYear((currentYear - 100))
+// console.log("Curret date:", currentTime, "100 year back is", new Date(hundredYearsAgo))
+
+// Question # 13
+// var userAge = Number(prompt("Enter your age", "19"))
+// var currentYear = new Date().getFullYear()
+// var birthYear = currentYear - userAge
+// console.log("Your age is:", userAge)
+// console.log("Your birth year is:", birthYear)
+
+// Question # 14
+// var customerName = "Shariq Ali"
+// var currentMonth = new Date().getMonth()
+// var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+// var numOfUnits = 410
+// var chargesPerUnit = 16
+// var netAmountWithinDueDate = numOfUnits * chargesPerUnit
+// var latePaymentCharges = 350
+// var netAmountAfterDueDate = netAmountWithinDueDate + latePaymentCharges
+// console.log("Customer Name:", customerName)
+// console.log("Month:", months[currentMonth])
+// console.log("Number of units:", numOfUnits)
+// console.log("Charges per unit:", chargesPerUnit)
+// console.log("Net Amount Payable (within Due Date):", netAmountWithinDueDate)
+// console.log("Late payment charges:", latePaymentCharges)
+// console.log("Gross Amount Payable (after Due Date):", netAmountAfterDueDate)
