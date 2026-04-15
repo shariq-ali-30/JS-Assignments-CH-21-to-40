@@ -501,14 +501,14 @@
 // charCount("JSResourceS.com", "o")
 
 // Question # 14
-// function calcCircumference(radius) {
-//     var circumference = 2 * Math.PI * radius
+// function calculateCircumference(radius) {
+//     var circumference = 2 * 3.14 * radius
 //     console.log("The circumference is:", circumference)
 // }
-// calcCircumference(5)
+// calculateCircumference(5)
 
-// function calcArea(radius) {
-//     var area = Math.PI * radius * radius
+// function calculateArea(radius) {
+//     var area = 3.14 * radius * radius
 //     console.log("The area is:", area)
 // }
-// calcArea(5)
+// calculateArea(5)
