@@ -352,3 +352,163 @@
 // console.log("Net Amount Payable (within Due Date):", netAmountWithinDueDate)
 // console.log("Late payment charges:", latePaymentCharges)
 // console.log("Gross Amount Payable (after Due Date):", netAmountAfterDueDate)
+
+// CHAPTER 35 to 38
+
+// Question # 1
+// function currentTime() {
+//     var now = new Date()
+//     console.log(now)
+// }
+// currentTime()
+
+// Question # 2
+// function greet(firstName, lastName) {
+//     var fullName = firstName + " " + lastName
+//     console.log("Hello,", fullName)
+// }
+// greet("Shariq", "Ali")
+
+// Question # 3
+// function add(num1, num2) {
+//     console.log(num1 + num2)
+// }
+// var num1 = Number(prompt("Enter first number"))
+// var num2 = Number(prompt("Enter second number"))
+// add(num1, num2)
+
+// Question # 4
+// function calculator(num1, num2, operator) {
+//     if (operator == "+") {
+//         console.log(num1 + num2)
+//     } else if (operator == "-") {
+//         console.log(num1 - num2)
+//     } else if (operator == "*") {
+//         console.log(num1 * num2)
+//     } else if (operator == "/"){
+//         console.log(num1 / num2)
+//     }
+// }
+// calculator(2, 3, "+")
+
+// Question # 5
+// function square(num) {
+//     console.log(num * num)
+// }
+// square(4)
+
+// Question # 6
+// function factorialFind(num) {
+//     for (let i = num - 1; i > 0; i--) {
+//         num *= i
+//     }
+//     console.log(num)
+// }
+// factorialFind(5)
+
+// Question # 7
+// function counting(startNum, endNum) {
+//     for (let i = startNum; i <= endNum; i++) {
+//         console.log(i)
+//     }
+// }
+// counting(20, 40)
+
+// Question # 8
+// function calculateHypotenuse(base, perpendicular) {
+//     function calculateSquare(num) {
+//         return num * num
+//     }
+
+//     var squareOfBase = calculateSquare(base)
+//     var squareOfPerpendicular = calculateSquare(perpendicular)
+
+//     hypotenuse = squareOfBase + squareOfPerpendicular
+
+//     console.log(hypotenuse)
+// }
+// calculateHypotenuse(3, 4)
+
+// Question # 9
+// function areaOfTriangle(width, height) {
+//     area = width * height
+//     console.log(area)
+// }
+// areaOfTriangle(5, 8)
+
+// function areaOfTriangle(width, height) {
+//     area = width * height
+//     console.log(area)
+// }
+// var width = 5
+// var height = 8
+// areaOfTriangle(width, height)
+
+// Question # 10
+// var string = "madam"
+// var reverseString = ""
+// for (let i = string.length - 1; i >= 0; i--) {
+//     reverseString += string[i]
+// }
+// function palindromeCheck(string) {
+//     if (string == reverseString) {
+//         console.log("The string is palindrome.")
+//     } else {
+//         console.log("The string is not palindrome.")
+//     }
+// }
+// palindromeCheck(string)
+
+// Questoin # 11
+// var string = "the quick brown fox"
+// function uppercase(string) {
+//     var strToArr = string.split(" ")
+//     var uppercaseString = ""
+//     for (let i = 0; i < strToArr.length; i++) {
+//             var firstChracter = strToArr[i].slice(0, 1)
+//             var otherCharacters = strToArr[i].slice(1)
+//             var uppercaseCharacter = firstChracter.toUpperCase()
+//             var fullWord = uppercaseCharacter + otherCharacters
+//             uppercaseString += fullWord + " "
+//         }
+//         console.log(uppercaseString)
+// }
+// uppercase(string)
+
+// Question # 12
+// function longestWord(string) {
+//     var strToArr = string.split(" ")
+//     var longestWord = ""
+//     for (let i = 0; i < strToArr.length; i++) {
+//         if (strToArr[i].length > longestWord.length) {
+//             longestWord = strToArr[i]
+//         }
+//     }
+//     console.log("The longest word is:", longestWord)
+// }
+// longestWord("Web Development Tutorial")
+
+// Question # 13
+// function charCount(string, character) {
+//     var count = 0
+//     for (let i = 0; i < string.length; i++) {
+//         if (string[i] == character) {
+//             count++
+//         }
+//     }
+//     console.log("There are", count, "occurrence(s) of character", character)
+// }
+// charCount("JSResourceS.com", "o")
+
+// Question # 14
+// function calcCircumference(radius) {
+//     var circumference = 2 * Math.PI * radius
+//     console.log("The circumference is:", circumference)
+// }
+// calcCircumference(5)
+
+// function calcArea(radius) {
+//     var area = Math.PI * radius * radius
+//     console.log("The area is:", area)
+// }
+// calcArea(5)
